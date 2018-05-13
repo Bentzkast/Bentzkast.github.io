@@ -1,0 +1,50 @@
+.right-fixed{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgba(128, 128, 128, 0.479);
+  width: 8%;
+  height: 30%;
+}
+
+.right-fixed-icon{
+  width: 100%;
+  padding: 9%;
+  font-size: 200%; 
+  color: black;
+}
+.right-fixed-icon:hover{
+  font-size: 220%;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-fixed-icon{
+    font-size: 400%; 
+    padding: 25%;
+  }
+  .right-fixed-icon:hover{
+    font-size: 440%;
+  }
+} 
+
+.main-heading{
+  font-weight: bolder;
+}
+
+.sub-heading{
+  font-weight: bold;
+}
+
+.heading-center{
+  text-align: center;
+}
+
+
+.project{
+  padding: 2em;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  /* font-size: 3rem; */
+}
+

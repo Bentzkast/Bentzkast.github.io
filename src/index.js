@@ -1,27 +1,32 @@
-import _ from 'lodash';
-import GetContent from './GetContent.js';
+import _ from "lodash";
+import GetContent from "./GetContent.js";
+import Project from "./Project.js";
+import Intro from "./Intro.js";
+import Content from "./content/Content.js";
 
 function component() {
-  const getContent = new GetContent;
-  var element = document.createElement('div');
+  const getContent = new GetContent();
+  // do the container
+  const element = document.createElement("div");
   element.className = "container";
-  var heading = document.createElement('h1');
-  heading.innerHTML = "Joseph Alfredo"
-  element.appendChild(heading);
-  
 
-  var sub_heading = document.createElement('p');
-  element.appendChild(sub_heading);
-  var link = document.createElement('a');
-  link.innerText = 'you can check my resume here';
-  link.setAttribute('href','./images/Resume-JosephAlfredo.pdf');
-  element.appendChild(link);
-  
-  
-  getContent.getContentText('./src/content/about.txt')
-  .then(text => sub_heading.appendChild(document.createTextNode(text)));
-  
-  
+  // main header
+  const mainHeading = document.createElement("h1");
+  mainHeading.textContent = "Joseph Alfredo";
+  mainHeading.className = "main-heading";
+  element.appendChild(mainHeading);
+
+  // intro 
+  element.appendChild(Intro(Content.intro));
+
+  // projects
+  const projectHeading = document.createElement("h3");
+  projectHeading.textContent = "Projects";
+  projectHeading.className = "sub-heading";
+  element.appendChild(projectHeading);
+  for (let project of Content.projects){
+    element.appendChild(Project(project));
+  }
 
   return element;
 }
