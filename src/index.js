@@ -1,7 +1,8 @@
 import _ from "lodash";
 import GetContent from "./GetContent.js";
-import Project from "./Project.js";
-import Intro from "./Intro.js";
+import Project from "./module/Project.js";
+import Intro from "./module/Intro.js";
+import Coursework from "./module/Coursework.js";
 import Content from "./content/Content.js";
 
 function component() {
@@ -26,6 +27,15 @@ function component() {
   element.appendChild(projectHeading);
   for (let project of Content.projects){
     element.appendChild(Project(project));
+  }
+
+  // coursework list
+  const courseworkHeading = document.createElement('h3');
+  courseworkHeading.textContent = "Coursework";
+  courseworkHeading.className = "sub-heading";
+  element.appendChild(courseworkHeading);
+  for (let coursework of Content.coursework){
+    element.appendChild(Coursework(coursework));
   }
 
   return element;

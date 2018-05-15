@@ -1,4 +1,4 @@
-import GetContent from "./GetContent.js";
+import GetContent from "../GetContent.js";
 
 function Intro(prop){
   const getContent = new GetContent();

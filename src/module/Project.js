@@ -1,4 +1,4 @@
-import GetContent from './GetContent.js';
+import GetContent from '../GetContent.js';
 
 function Project(props){
   const element = document.createElement('div');
