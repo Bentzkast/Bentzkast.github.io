@@ -3,7 +3,10 @@ import GetContent from "./GetContent.js";
 import Project from "./module/Project.js";
 import Intro from "./module/Intro.js";
 import Coursework from "./module/Coursework.js";
+import Education from './module/Education.js';
+
 import Content from "./content/Content.js";
+
 
 function component() {
   const getContent = new GetContent();
@@ -27,6 +30,15 @@ function component() {
   element.appendChild(projectHeading);
   for (let project of Content.projects){
     element.appendChild(Project(project));
+  }
+
+  // education
+  const educationHeading = document.createElement('h3');
+  educationHeading.textContent = "Education";
+  educationHeading.className = "sub-heading";
+  element.appendChild(educationHeading);
+  for (let education of Content.education){
+    element.appendChild(Education(education))
   }
 
   // coursework list
