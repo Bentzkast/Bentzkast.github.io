@@ -17,7 +17,7 @@ const _projectContent = (function() {
       courseHref: "http://catalog.calpoly.edu/search/?P=cpe+464"
     },
     {
-      courseText: "Dynamic Web Development",
+      courseText: "Design and Analysis of Algorithms",
       courseHref: "http://catalog.calpoly.edu/search/?P=csc+349"
     }
   ];
