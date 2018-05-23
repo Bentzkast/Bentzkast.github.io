@@ -1,46 +1,60 @@
-.right-fixed{
+a {
+  color: #325132;
+  text-decoration: none;
+  border: 1px solid #325132;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  border: 1px solid #0fa0ce;
+}
+
+.right-fixed {
   position: fixed;
   right: 0;
   top: 0;
   background: rgba(128, 128, 128, 0.479);
-  width: 8%;
-  height: 300px;
+  width: 20%;
+  height: 100px;
 }
 
-.right-fixed-icon{
-  width: 100%;
-  padding: 9%;
-  font-size: 200%; 
+.right-fixed-icon {
+  width: 80%;
+  padding: 5px;
+  font-size: 200%;
   color: black;
+  border: none;
 }
-.right-fixed-icon:hover{
+.right-fixed-icon:hover {
   font-size: 220%;
+  border: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .right-fixed-icon{
-    font-size: 400%; 
-    padding: 25%;
+  .right-fixed-icon {
+    font-size: 400%;
+    padding: 10px;
+    margin: 5px;
   }
-  .right-fixed-icon:hover{
+  .right-fixed-icon:hover {
     font-size: 440%;
   }
-} 
+}
 
-.main-heading{
+.main-heading {
   font-weight: bolder;
 }
 
-.sub-heading{
+.sub-heading {
   font-weight: bold;
 }
 
-.heading-center{
+.heading-center {
   text-align: center;
 }
 
-
-.project{
+.project {
   padding: 2em;
   width: 80%;
   margin: auto;
@@ -48,7 +62,53 @@
   /* font-size: 3rem; */
 }
 
-.subtitle{
+.subtitle {
   margin-left: 1em;
 }
 
+.intro {
+  color: #325132;
+  background-image: url("../images/intro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.intro-text {
+  font-weight: bolder;
+  margin-top: -130px;
+}
+
+.intro-jumbotron {
+  font-size: 6rem;
+}
+
+.intro-readmore {
+  font-size: 2.4rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #325132;
+  border: 2px solid #325132;
+  border-radius: 5px;
+}
+
+.intro-readmore:hover {
+  border: 2px solid #0fa0ce;
+}
+
+#section-a {
+  background: #a2aebd;
+  color: #171f22;
+}
+
+.card {
+  padding: 10px 20px;
+  margin: 25px 20px;
+}

@@ -13,7 +13,7 @@ const _projectContent = (function() {
       courseHref: "http://catalog.calpoly.edu/search/?P=csc+437"
     },
     {
-      courseText: "Design and Analysis of Algorithms",
+      courseText: "Introduction to Computer Networks",
       courseHref: "http://catalog.calpoly.edu/search/?P=cpe+464"
     },
     {
