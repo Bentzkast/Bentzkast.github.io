@@ -1,19 +1,20 @@
-import GetContent from "../GetContent.js";
+import GetContent from '../GetContent.js';
 
 function Intro(prop) {
   const getContent = new GetContent();
 
-  const element = document.createElement("div");
-  element.className = "container intro-text";
-  const titleElement = document.createElement("h1");
+  const element = document.createElement('div');
+  // element.className = "container intro-text";
+  const titleElement = document.createElement('h1');
   titleElement.textContent = prop.titleText;
-  titleElement.className = "intro-jumbotron";
-  const textElement = document.createElement("p");
+
+  const textElement = document.createElement('p');
   textElement.textContent = prop.text;
-  const linkElement = document.createElement("a");
+  textElement.className = 'flow-text raleway';
+  const linkElement = document.createElement('a');
   linkElement.textContent = prop.linkText;
-  linkElement.setAttribute("href", prop.linkHref);
-  linkElement.className = "intro-readmore";
+  linkElement.setAttribute('href', prop.linkHref);
+  linkElement.className = 'btn wave-effect wave-light light-green darken-3';
 
   element.appendChild(titleElement);
   element.appendChild(textElement);

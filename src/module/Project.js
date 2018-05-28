@@ -1,20 +1,19 @@
-import GetContent from "../GetContent.js";
+import GetContent from '../GetContent.js';
 
 function Project(props) {
-  const element = document.createElement("div");
-  element.className = "project";
-  const titleElement = document.createElement("h3");
+  const element = document.createElement('div');
+  const titleElement = document.createElement('h4');
   titleElement.textContent = props.projectTitle;
-  const textElement = document.createElement("p");
+  const textElement = document.createElement('p');
   textElement.textContent = props.projectDesc;
 
   element.appendChild(titleElement);
   element.appendChild(textElement);
 
-  if (props.linkText !== "none") {
-    const linkElement = document.createElement("a");
+  if (props.linkText !== 'none') {
+    const linkElement = document.createElement('a');
     linkElement.textContent = props.linkText;
-    linkElement.setAttribute("href", props.linkHref);
+    linkElement.setAttribute('href', props.linkHref);
     element.appendChild(linkElement);
   }
 
