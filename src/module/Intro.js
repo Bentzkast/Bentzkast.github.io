@@ -1,8 +1,4 @@
-import GetContent from '../GetContent.js';
-
 function Intro(prop) {
-  const getContent = new GetContent();
-
   const element = document.createElement('div');
   // element.className = "container intro-text";
   const titleElement = document.createElement('h1');

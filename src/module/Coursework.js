@@ -1,9 +1,7 @@
-import GetContent from '../GetContent.js';
-
 function CourseWork(props) {
-  const element = document.createElement('div');
+  const element = document.createElement('ul');
   const linkElement = document.createElement('a');
-  linkElement.className = '';
+  linkElement.className = 'collection-item';
   linkElement.textContent = props.courseText;
   linkElement.setAttribute('href', props.courseHref);
   element.appendChild(linkElement);
