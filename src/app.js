@@ -20,14 +20,17 @@ function intro() {
 function sectionProject() {
   // do the container
   const wrapper = document.createElement('div');
-  wrapper.className = '';
+  wrapper.className = 'row';
 
   // projects
   const projectHeading = document.createElement('h3');
   projectHeading.textContent = 'Projects';
   wrapper.appendChild(projectHeading);
   for (let project of Content.projects) {
-    wrapper.appendChild(Project(project));
+    const col = document.createElement('div');
+    col.className = 'col m6 s12';
+    col.appendChild(Project(project));
+    wrapper.appendChild(col);
   }
 
   return wrapper;
@@ -67,37 +70,22 @@ function sectionCoursework() {
 function sectionSkill() {
   const wrapper = document.createElement('div');
   wrapper.className = 'row';
-  const left = document.createElement('div');
-  const lefti = document.createElement('ul');
-  const mid = document.createElement('div');
-  const midi = document.createElement('ul');
-  const right = document.createElement('div');
-  const righti = document.createElement('ul');
-
-  left.appendChild(lefti);
-  mid.appendChild(midi);
-  right.appendChild(righti);
-
-  left.className = 'col l4 s12';
-  mid.className = 'col l4 s12';
-  right.className = 'col l4 s12';
-  lefti.className = 'collection with-header';
-  midi.className = 'collection with-header';
-  righti.className = 'collection with-header';
-  const packet = [lefti, midi, righti];
-
-  for (let i = 0; i < packet.length; i++) {
+  const title = document.createElement('h3');
+  title.textContent = 'Skill';
+  wrapper.appendChild(title);
+  for (let list of Content.skills) {
+    const col = document.createElement('div');
+    col.className = 'col l4 m4 s12 ';
+    const collection = document.createElement('ul');
+    collection.className = 'collection with-header center';
+    col.appendChild(collection);
     const heading = document.createElement('li');
     heading.className = 'collection-header light-blue darken-3 white-text';
-    heading.innerHTML = `<h5>${Content.skills[i].title}</h5>`;
-    packet[i].appendChild(heading);
-    for (let skill of Content.skills[i].list) {
-      packet[i].appendChild(Skill(skill));
-    }
+    heading.innerHTML = `<h5>${list.title}</h5>`;
+    collection.appendChild(heading);
+    list.list.forEach(skill => collection.appendChild(Skill(skill)));
+    wrapper.appendChild(col);
   }
-  wrapper.appendChild(left);
-  wrapper.appendChild(mid);
-  wrapper.appendChild(right);
 
   return wrapper;
 }

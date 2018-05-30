@@ -1,7 +1,7 @@
 function Education(props) {
   const element = document.createElement('div');
   element.className = 'card-panel';
-  const titleElement = document.createElement('h4');
+  const titleElement = document.createElement('h5');
   titleElement.textContent = props.title;
   const subtitleElement = document.createElement('small');
   subtitleElement.className = 'subtitle';

@@ -5,11 +5,15 @@ const skills = [
   },
   {
     title: 'Framework',
-    list: ['React', 'NodeJS', 'Bootstrap', 'Materialized']
+    list: ['React', 'NodeJS', 'Express', 'Bootstrap', 'Materialized']
+  },
+  {
+    title: 'Testing',
+    list: ['Postman', 'Mocha']
   },
   {
     title: 'Database',
-    list: ['MySql', 'PostgreSQL', 'MongoDB', 'Materialized']
+    list: ['MySql', 'PostgreSQL', 'Mongoose', 'MongoDB']
   }
 ];
 

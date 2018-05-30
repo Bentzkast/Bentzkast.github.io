@@ -1,7 +1,7 @@
 function Intro(prop) {
   const element = document.createElement('div');
   // element.className = "container intro-text";
-  const titleElement = document.createElement('h1');
+  const titleElement = document.createElement('h2');
   titleElement.textContent = prop.titleText;
 
   const textElement = document.createElement('p');
