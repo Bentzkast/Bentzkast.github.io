@@ -23,7 +23,7 @@ const _projectContent = (function() {
       with login authentication, conversation and message system for each user that support different level of user priviledge, admin and user,
       utilized postman cli as API testing system`,
       linkText: 'none',
-      imageSrc: 'none'
+      imageSrc: './images/CSR.png'
     },
     {
       projectTitle: 'Note Taker - Personal Project',

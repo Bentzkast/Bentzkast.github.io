@@ -26729,7 +26729,7 @@ var _projectContent = function () {
     projectTitle: 'Full Stack Chat Server - School Project',
     projectDesc: 'Designed a full stack application with NodeJS and React framework, \n      with login authentication, conversation and message system for each user that support different level of user priviledge, admin and user,\n      utilized postman cli as API testing system',
     linkText: 'none',
-    imageSrc: 'none'
+    imageSrc: './images/CSR.png'
   }, {
     projectTitle: 'Note Taker - Personal Project',
     projectDesc: 'Implemented a static server side web application with node and express, with\n    database and form validation, account creation and responsive UI.\n    Deployed the application prototype on free cloud service , Heroku and M Lab',
