@@ -9138,7 +9138,7 @@ function intro() {
 function sectionProject() {
   // do the container
   var wrapper = document.createElement('div');
-  wrapper.className = '';
+  wrapper.className = 'row';
 
   // projects
   var projectHeading = document.createElement('h3');
@@ -9152,7 +9152,10 @@ function sectionProject() {
     for (var _iterator = _Content2.default.projects[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       var project = _step.value;
 
-      wrapper.appendChild((0, _Project2.default)(project));
+      var col = document.createElement('div');
+      col.className = 'col m6 s12';
+      col.appendChild((0, _Project2.default)(project));
+      wrapper.appendChild(col);
     }
   } catch (err) {
     _didIteratorError = true;
@@ -9249,58 +9252,50 @@ function sectionCoursework() {
 function sectionSkill() {
   var wrapper = document.createElement('div');
   wrapper.className = 'row';
-  var left = document.createElement('div');
-  var lefti = document.createElement('ul');
-  var mid = document.createElement('div');
-  var midi = document.createElement('ul');
-  var right = document.createElement('div');
-  var righti = document.createElement('ul');
+  var title = document.createElement('h3');
+  title.textContent = 'Skill';
+  wrapper.appendChild(title);
 
-  left.appendChild(lefti);
-  mid.appendChild(midi);
-  right.appendChild(righti);
-
-  left.className = 'col l4 s12';
-  mid.className = 'col l4 s12';
-  right.className = 'col l4 s12';
-  lefti.className = 'collection with-header';
-  midi.className = 'collection with-header';
-  righti.className = 'collection with-header';
-  var packet = [lefti, midi, righti];
-
-  for (var i = 0; i < packet.length; i++) {
+  var _loop = function _loop(list) {
+    var col = document.createElement('div');
+    col.className = 'col l4 m4 s12 ';
+    var collection = document.createElement('ul');
+    collection.className = 'collection with-header center';
+    col.appendChild(collection);
     var heading = document.createElement('li');
     heading.className = 'collection-header light-blue darken-3 white-text';
-    heading.innerHTML = '<h5>' + _Content2.default.skills[i].title + '</h5>';
-    packet[i].appendChild(heading);
-    var _iteratorNormalCompletion4 = true;
-    var _didIteratorError4 = false;
-    var _iteratorError4 = undefined;
+    heading.innerHTML = '<h5>' + list.title + '</h5>';
+    collection.appendChild(heading);
+    list.list.forEach(function (skill) {
+      return collection.appendChild((0, _Skill2.default)(skill));
+    });
+    wrapper.appendChild(col);
+  };
 
+  var _iteratorNormalCompletion4 = true;
+  var _didIteratorError4 = false;
+  var _iteratorError4 = undefined;
+
+  try {
+    for (var _iterator4 = _Content2.default.skills[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+      var list = _step4.value;
+
+      _loop(list);
+    }
+  } catch (err) {
+    _didIteratorError4 = true;
+    _iteratorError4 = err;
+  } finally {
     try {
-      for (var _iterator4 = _Content2.default.skills[i].list[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-        var skill = _step4.value;
-
-        packet[i].appendChild((0, _Skill2.default)(skill));
+      if (!_iteratorNormalCompletion4 && _iterator4.return) {
+        _iterator4.return();
       }
-    } catch (err) {
-      _didIteratorError4 = true;
-      _iteratorError4 = err;
     } finally {
-      try {
-        if (!_iteratorNormalCompletion4 && _iterator4.return) {
-          _iterator4.return();
-        }
-      } finally {
-        if (_didIteratorError4) {
-          throw _iteratorError4;
-        }
+      if (_didIteratorError4) {
+        throw _iteratorError4;
       }
     }
   }
-  wrapper.appendChild(left);
-  wrapper.appendChild(mid);
-  wrapper.appendChild(right);
 
   return wrapper;
 }
@@ -26489,7 +26484,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Project(props) {
   var card = document.createElement('div');
-  card.className = 'card';
+  card.className = 'card light-blue lighten-3';
+  if (props.imageSrc !== 'none') {
+    var card_image = document.createElement('div');
+    card_image.className = 'card-image';
+    var image = document.createElement('img');
+    image.setAttribute('src', props.imageSrc);
+    card_image.appendChild(image);
+    card.appendChild(card_image);
+  }
+
   var card_content = document.createElement('div');
   card_content.className = 'card-content';
 
@@ -26533,7 +26537,7 @@ Object.defineProperty(exports, "__esModule", {
 function Intro(prop) {
   var element = document.createElement('div');
   // element.className = "container intro-text";
-  var titleElement = document.createElement('h1');
+  var titleElement = document.createElement('h2');
   titleElement.textContent = prop.titleText;
 
   var textElement = document.createElement('p');
@@ -26588,7 +26592,7 @@ Object.defineProperty(exports, "__esModule", {
 function Education(props) {
   var element = document.createElement('div');
   element.className = 'card-panel';
-  var titleElement = document.createElement('h4');
+  var titleElement = document.createElement('h5');
   titleElement.textContent = props.title;
   var subtitleElement = document.createElement('small');
   subtitleElement.className = 'subtitle';
@@ -26691,9 +26695,9 @@ Object.defineProperty(exports, "__esModule", {
 var _introContent = function () {
   return {
     titleText: 'Greetings!',
-    linkText: 'My Resume',
+    linkText: 'Resume (PDF)',
     linkHref: './images/Resume-JosephAlfredo.pdf',
-    text: 'My name is Joseph Alfredo, I\u2019m an undergraduate CPE student at Calpoly University, I\'m planning to graduate this June 2018. \n    I spend my spare time making fun stuff like web application, game and food.    \n    I currently working on statistical model web application as a undergraduate research assistant with my professor Dennis L.Sun.\n    I also working on an small adventure game on unity and Cooking Recipe full stack application.\n    Feel free to contact me if you have any job offer.'
+    text: 'My name is Joseph Alfredo, I\u2019m an undergraduate computer engineer at Calpoly University, graduating this June 2018. \n    I specialize in making full stack web application and food.\n    I currently working on statistical model SPA with my Professor Dennis L.Sun.\n    I also working on my personal application, Cookery, a home recipe sharing web app.\n    You can check out the link to my paper resume or read about some of my projects down below!'
   };
 }();
 
@@ -26711,18 +26715,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 var _projectContent = function () {
   return [{
-    projectTitle: "BoxModel - Undergraduate Research Assistant",
-    projectDesc: "Implemented a single page box model simulation to visualize a statistical concept as\n    a joint research project with Professor Dennis L. Sun.\n    Programmed the logic for the application with React framework and designed UI\n    which work seamlessly with Professor's custom histogram code.",
-    linkText: "Check it out Here",
-    linkHref: "https://www.calpoly.edu/~jalfredo/"
+    projectTitle: 'BoxModel - Undergraduate Research Assistant',
+    projectDesc: 'Implemented a single page box model simulation to visualize a statistical concept as\n    a joint research project with Professor Dennis L. Sun.\n    Programmed the logic for the application with React framework and designed UI\n    which work seamlessly with Professor\'s custom histogram code.',
+    linkText: 'Check it out Here',
+    linkHref: 'https://www.calpoly.edu/~jalfredo/',
+    imageSrc: './images/BoxModel.png'
   }, {
-    projectTitle: "Full Stack Chat Server - School Project",
-    projectDesc: "Designed an full stack application with NodeJS and React framework, \n      with login authentication, conversation and message system for each user that support single or multiple user,\n      utilized postman cli as API testing system",
-    linkText: "none"
+    projectTitle: 'Cookery - Personal Project - On Going',
+    projectDesc: 'Engineered a full stack application with NodeJS and React-Redux framework, with Json Web Token authorization.\n       Implemented a recipe posting and sharing system which allow multiple user to like and comments on each recipe.',
+    linkText: 'none',
+    imageSrc: 'none'
   }, {
-    projectTitle: "Note Taker - Personal Project",
-    projectDesc: "Implemented a static server side web application with node and express, with\n    database and form validation, account creation and responsive UI.\n    Deployed the application prototype on free cloud service , Heroku and M Lab",
-    linkText: "none"
+    projectTitle: 'Full Stack Chat Server - School Project',
+    projectDesc: 'Designed a full stack application with NodeJS and React framework, \n      with login authentication, conversation and message system for each user that support different level of user priviledge, admin and user,\n      utilized postman cli as API testing system',
+    linkText: 'none',
+    imageSrc: 'none'
+  }, {
+    projectTitle: 'Note Taker - Personal Project',
+    projectDesc: 'Implemented a static server side web application with node and express, with\n    database and form validation, account creation and responsive UI.\n    Deployed the application prototype on free cloud service , Heroku and M Lab',
+    linkText: 'none',
+    imageSrc: 'none'
   }];
 }();
 
@@ -26796,10 +26808,13 @@ var skills = [{
   list: ['HTML', 'CSS', 'Javascript', 'Java', 'Python', 'C']
 }, {
   title: 'Framework',
-  list: ['React', 'NodeJS', 'Bootstrap', 'Materialized']
+  list: ['React', 'NodeJS', 'Express', 'Bootstrap', 'Materialized']
+}, {
+  title: 'Testing',
+  list: ['Postman', 'Mocha']
 }, {
   title: 'Database',
-  list: ['MySql', 'PostgreSQL', 'MongoDB', 'Materialized']
+  list: ['MySql', 'PostgreSQL', 'Mongoose', 'MongoDB']
 }];
 
 exports.default = skills;
