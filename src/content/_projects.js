@@ -12,16 +12,17 @@ const _projectContent = (function() {
     },
     {
       projectTitle: 'Cookery - Personal Project - On Going',
-      projectDesc: `Engineered a full stack application with NodeJS and React-Redux framework, with Json Web Token authorization.
-       Implemented a recipe posting and sharing system which allow multiple user to like and comments on each recipe.`,
+      projectDesc: `Engineered a full stack application with NodeJS and React-Redux framework,
+       with JSON Web Token authorization. Implemented a recipe posting and sharing system which allow
+        multiple users to like and comments on each recipe.`,
       linkText: 'none',
       imageSrc: 'none'
     },
     {
       projectTitle: 'Full Stack Chat Server - School Project',
       projectDesc: `Designed a full stack application with NodeJS and React framework, 
-      with login authentication, conversation and message system for each user that support different level of user priviledge, admin and user,
-      utilized postman cli as API testing system`,
+      with login authentication, conversation and message system for each user that
+       support different level of user privileges, admin, and user, utilized postman as API testing system.`,
       linkText: 'none',
       imageSrc: './images/CSR.png'
     },
