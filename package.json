@@ -1,0 +1,31 @@
+{
+  "name": "bentzkast.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bentzkast/Bentzkast.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bentzkast/Bentzkast.github.io/issues"
+  },
+  "homepage": "https://github.com/Bentzkast/Bentzkast.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.0"
+  }
+}
