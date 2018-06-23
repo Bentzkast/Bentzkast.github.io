@@ -1,24 +1,29 @@
 {
   "name": "bentzkast.github.io",
   "version": "1.0.0",
-  "description": "personal web page",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --output-public-path=/build/"
+    "start": "gulp"
   },
-  "author": "Joseph Alfredo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bentzkast/Bentzkast.github.io.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bentzkast/Bentzkast.github.io/issues"
+  },
+  "homepage": "https://github.com/Bentzkast/Bentzkast.github.io#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "waypoints": "^4.0.1"
+    "jquery": "^3.3.1"
   }
 }

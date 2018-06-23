@@ -2,75 +2,165 @@
 <html lang="en">
 
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Joseph Alfredo</title>
+  <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./App/dist/styles/styles.css">
 </head>
 
-<body class="teal lighten-5 raleway">
-  <div class="navbar-fixed">
-    <nav class="light-blue darken-3">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a class="brand-logo  left">Joseph Afredo</a>
-          <ul id="nav-mobile" class="right hide-on-medium-and-down">
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__logo">
+        <div class="site-header__logo__graphic">Joseph Alfredo</div>
+      </div>
+
+      <div class="site-header__menu-icon"></div>
+
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn">Contact</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
             <li>
-              <a href="https://github.com/Bentzkast">
-                <i class="fa fa-github small"></i>
-              </a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/josephalfredo/">
-                <i class="fa fa-linkedin small"></i>
-              </a>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
             </li>
           </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="large-hero">
+    <picture>
+      <source srcset="app/dist/images/intro--large.jpeg 1920w" media="(min-width: 1280px)">
+      <source srcset="app/dist/images/intro--medium.jpeg 1280w" media="(min-width: 640px)">
+      <img srcset="app/dist/images/intro--small.jpeg 640w" alt="Mountains" class="large-hero__image">
+    </picture>
+    <div class="large-hero__text-content">
+      <div class="container">
+        <h1 class="large-hero__title">Hello</h1>
+        <h2 class="large-hero__subtitle">Welcome</h2>
+        <p class="large-hero__description">My name is Joseph Alfredo and this is my web portofolio</p>
+        <p class="large-hero__button">
+          <a class="btn btn--orange btn--large" href="#">Start Here</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page-section" id="experience">
+    <div class="container">
+      <h1>Related
+        <strong>Experience</strong>
+      </h1>
+      <div class="projects">
+        <img class="projects__image" src="app/dist/images/BoxModel.png" alt="chat server">
+        <h3 class="projects__title">Front End Developer - California Polytechic Undergraduate Research</h3>
+        <h4 class="projects__subtitle">2018/02 to Present</h4>
+        <div class="projects__desc">
+          <p>Achieved dynamic visual presentation of a university level statistic concept by implementing a single page web
+            application with React and Bootstrap framework.
+          </p>
+          <p>Collaborate via github and weekly meetings with Professor Dennis L. Sun.</p>
+          <p>Designed UI to ensure maximum clarity and minimize user confusion by implementing animation for each step and drop-down
+            interface UI with CSS and Javascript.
+          </p>
+          <p>Programmed the state management logic for the application with React framework which works seamlessly with Professor's
+            custom-made histogram code.</p>
+        </div>
+        <div class="projects__button">
+          <a class="btn btn--centered" href="#">Check it out here</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-section" id="projects">
+    <div class="container">
+      <h1>Personal &amp; University
+        <strong>Project</strong>
+      </h1>
+      <div class="projects">
+        <img class="projects__image" src="app/dist/images/Cookery.png" alt="chat server">
+        <h3 class="projects__title">Cookery - A recipe sharing website</h3>
+        <h4 class="projects__subtitle">2018/05 to Present</h4>
+        <div class="projects__desc">
+          <p>Developed an authentication system by implementing a JSON web token for a session key</p>
+          <p>Implemented posting and sharing system with ajax which allow multiple users to likes and comment on each other
+            recipes, post and message
+          </p>
         </div>
       </div>
-    </nav>
+      <div class="projects">
+        <img class="projects__image" src="app/dist/images/ChatServer.png" alt="chat server">
+        <h3 class="projects__title">React Chat Server - Full stack reddit like web application</h3>
+        <h4 class="projects__subtitle">2018/01 to 2018/4</h4>
+        <div class="projects__desc">
+          <p>Created fully RESTful API backend according to a specified specification, tested with Postman to ensure reliability
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  </nav>
-  <section class="showcase dark-green-text darken-1" id="showcase"></section>
-  <div class="container">
 
-    <section id="section-1"></section>
-    <br>
-    <br>
-    <section id="section-2"></section>
-    <br>
-    <br>
-    <section id="section-3"></section>
-    <br>
-    <br>
-    <section id="section-4"></section>
-    <br>
-    <br>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js "></script>
-  <script src="build/app.bundle.js "></script>
+
+  <div class="page-section page-section--blue" id="education">
+    <div class="container">
+      <h1>Education</h1>
+      <h3>B.S. Computer Engineering, California Polytechnic State University, 2018 ( Dean List )</h3>
+      <h3>A.S. Computer Engineering, Green River Community College, 2015 ( Graduated with Honors) </h3>
+    </div>
+
+  </div>
+  <div class="page-section page-section--blue" id="skills">
+    <div class="container">
+      <h1>Skills</h1>
+      <ul>
+        <li>Java, C#, C, Python</li>
+        <li>HTML, CSS, SASS, JavaScript, Jquery, NodeJS</li>
+        <li>SQL, MYSQL, PostgreSQL, MongoDB</li>
+        <li>Git, Github, Gulp, Webpack</li>
+        <li>Postman, Mocha</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="page-section page-section--green" id="about" style="min-height: 500px">
+    <div class="container">
+      <h1>About</h1>
+      <h3>Email : jalfredopoly@gmail.com</h3>
+      <div class="paragraph">
+        <p>A resourceful, dependable, responsible, enthusiastic and active team player in a dynamic work environment. Solve
+          and manage complex challenges to deliver high-quality results. High attention to detail and desire to learn. Love
+          elegant interfaces and writing clean code. </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Copyright &copy; 2018 Joseph Alfredo. </p>
+    </div>
+  </footer>
+  <!-- <script src="/d"></script> -->
 </body>
 
 </html>
