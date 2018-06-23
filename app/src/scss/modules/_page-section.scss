@@ -1,0 +1,17 @@
+.page-section {
+  padding: 2.25rem 0;
+  background-color: $mainWhite;
+
+  @include atSmall {
+    padding: 4.5rem 0 2.25 0;
+  }
+
+  &--blue {
+    color: $mainWhite;
+    background-color: $secondaryBlue;
+  }
+
+  &--green {
+    background-color: $mainGreen;
+  }
+}

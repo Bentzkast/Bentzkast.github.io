@@ -1,0 +1,58 @@
+.projects {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 13px;
+  @include atSmall {
+    padding-left: 280px;
+  }
+
+  &__image {
+    display: block;
+    overflow: hidden;
+    width: 280px;
+    height: 180px;
+    margin: 0 auto;
+    left: 2%;
+    border: 2px solid $mainGreen;
+
+    @include atSmall {
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 2px;
+      position: absolute;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 0.7em;
+    margin-bottom: 0.8rem;
+    text-align: center;
+
+    @include atSmall {
+      margin-top: 1em;
+      font-size: 1.875rem;
+    }
+  }
+
+  &__subtitle {
+    color: $mainOrange;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin: 0.25rem 0 1rem 0;
+  }
+
+  &__desc {
+    padding: 0 4.5rem;
+    line-height: 1.3rem;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

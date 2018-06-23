@@ -3,6 +3,7 @@
   position: relative;
 
   &__image {
+    // remove gap
     display: block;
   }
 
@@ -25,9 +26,10 @@
     color: $mainBlue;
     margin: 0;
     font-size: 2.4rem;
-    padding-top: 40px;
+    padding-top: 16px;
 
     @include atSmall {
+      padding-top: 40px;
       font-size: 4.8rem;
     }
   }
@@ -57,6 +59,14 @@
 
     @include atSmall {
       font-size: 1.875rem;
+    }
+  }
+
+  &__button {
+    visibility: hidden;
+
+    @include atMedium {
+      visibility: visible;
     }
   }
 }

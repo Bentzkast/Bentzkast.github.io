@@ -1,0 +1,12 @@
+.col {
+  @include clearFix;
+  &__4 {
+    float: left;
+    width: 33%;
+  }
+
+  &__8 {
+    float: left;
+    width: 66%;
+  }
+}
