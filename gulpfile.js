@@ -1,7 +1,7 @@
 const gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass'),
-  imageMin = require('gulp-imagemin'),
+  imagemin = require('gulp-imagemin'),
   uglify = require('gulp-uglify');
 
 // compile sass
@@ -29,6 +29,13 @@ gulp.task('serve', ['sass'], () => {
   // check if there are any change, if so compile and refresh
   gulp.watch(['./app/src/scss/**/*.scss'], ['sass']);
   gulp.watch('./index.html').on('change', browserSync.reload);
+});
+
+gulp.task('imagemin', () => {
+  gulp
+    .src('./app/src/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./app/dist/images'));
 });
 
 gulp.task('default', ['serve']);
