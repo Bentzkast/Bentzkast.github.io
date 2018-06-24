@@ -48,8 +48,12 @@
   }
 
   &__desc {
-    padding: 0 4.5rem;
+    padding: 0 1.5rem;
     line-height: 1.3rem;
+
+    @include atSmall {
+      padding: 0 4.5rem;
+    }
   }
 
   &__button {

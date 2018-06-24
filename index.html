@@ -9,6 +9,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./app/dist/styles/styles.css">
 </head>
 
@@ -23,7 +24,14 @@
 
       <div class="site-header__menu-content">
         <div class="site-header__btn-container">
-          <a href="#" class="btn">Contact</a>
+          <a href="https://github.com/Bentzkast" class="btn">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="site-header__btn-container">
+          <a href="https://www.linkedin.com/in/josephalfredo/" class="btn">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
@@ -52,9 +60,9 @@
       <div class="container">
         <h1 class="large-hero__title">Hello</h1>
         <h2 class="large-hero__subtitle">Welcome</h2>
-        <p class="large-hero__description">My name is Joseph Alfredo and this is my web portofolio</p>
+        <p class="large-hero__description">My name is Joseph Alfredo and this is my web portofolio. </p>
         <p class="large-hero__button">
-          <a class="btn btn--orange btn--large" href="#">Start Here</a>
+          <a class="btn btn--orange btn--large" href="app/dist/docs/Resume-JosephAlfredo.pdf">My resume (pdf)</a>
         </p>
       </div>
 
@@ -63,7 +71,7 @@
 
   <div class="page-section" id="experience">
     <div class="container">
-      <h1>Related
+      <h1 class="heading">Related
         <strong>Experience</strong>
       </h1>
       <div class="projects">
@@ -74,15 +82,18 @@
           <p>Achieved dynamic visual presentation of a university level statistic concept by implementing a single page web
             application with React and Bootstrap framework.
           </p>
-          <p>Collaborate via github and weekly meetings with Professor Dennis L. Sun.</p>
+          <p>Dynamic workflow with collaboration via GitHub and weekly meetings with Professor Dennis L. Sun.
+          </p>
           <p>Designed UI to ensure maximum clarity and minimize user confusion by implementing animation for each step and drop-down
             interface UI with CSS and Javascript.
+
           </p>
           <p>Programmed the state management logic for the application with React framework which works seamlessly with Professor's
-            custom-made histogram code.</p>
+            custom-made histogram code.
+          </p>
         </div>
         <div class="projects__button">
-          <a class="btn btn--centered" href="#">Check it out here</a>
+          <a class="btn btn--centered" href="https://www.calpoly.edu/~jalfredo/">Check it out here</a>
         </div>
 
       </div>
@@ -92,7 +103,7 @@
 
   <div class="page-section" id="projects">
     <div class="container">
-      <h1>Personal &amp; University
+      <h1 class="heading">Personal &amp; University
         <strong>Project</strong>
       </h1>
       <div class="projects">
@@ -100,9 +111,12 @@
         <h3 class="projects__title">Cookery - A recipe sharing website</h3>
         <h4 class="projects__subtitle">2018/05 to Present</h4>
         <div class="projects__desc">
-          <p>Developed an authentication system by implementing a JSON web token for a session key</p>
-          <p>Implemented posting and sharing system with ajax which allow multiple users to likes and comment on each other
-            recipes, post and message
+          <p>Developed an authentication system by implementing a JSON web token for a session key.
+          </p>
+          <p>Implemented posting and sharing system with ajax which allow multiple users to like and comment on each other recipes,
+            post, and message.
+          </p>
+          <p>Used API with React-Redux in client side to serve form validation and authentication session.
           </p>
         </div>
       </div>
@@ -111,7 +125,11 @@
         <h3 class="projects__title">React Chat Server - Full stack reddit like web application</h3>
         <h4 class="projects__subtitle">2018/01 to 2018/4</h4>
         <div class="projects__desc">
-          <p>Created fully RESTful API backend according to a specified specification, tested with Postman to ensure reliability
+          <p>Created fully RESTful API backend according to a specified specification, tested by implementing Postman tests
+            to ensure reliability and expected behavior.
+          </p>
+          <p>Supports multiple levels of user privileges, admin, and user, with information stored in MySQL database, achieved
+            moderated public channel and private message between used.
           </p>
         </div>
       </div>
@@ -122,7 +140,7 @@
 
   <div class="page-section page-section--blue" id="education">
     <div class="container">
-      <h1>Education</h1>
+      <h1 class="heading">Education</h1>
       <h3>B.S. Computer Engineering, California Polytechnic State University, 2018 ( Dean List )</h3>
       <h3>A.S. Computer Engineering, Green River Community College, 2015 ( Graduated with Honors) </h3>
     </div>
@@ -130,21 +148,21 @@
   </div>
   <div class="page-section page-section--blue" id="skills">
     <div class="container">
-      <h1>Skills</h1>
-      <ul>
+      <h1 class="heading">Skills</h1>
+      <ul class="list">
         <li>Java, C#, C, Python</li>
         <li>HTML, CSS, SASS, JavaScript, Jquery, NodeJS</li>
         <li>SQL, MYSQL, PostgreSQL, MongoDB</li>
         <li>Git, Github, Gulp, Webpack</li>
         <li>Postman, Mocha</li>
-      </ul>
+        </u>
     </div>
 
   </div>
 
   <div class="page-section page-section--green" id="about" style="min-height: 500px">
     <div class="container">
-      <h1>About</h1>
+      <h1 class="heading">About</h1>
       <h3>Email : jalfredopoly@gmail.com</h3>
       <div class="paragraph">
         <p>A resourceful, dependable, responsible, enthusiastic and active team player in a dynamic work environment. Solve

@@ -1,0 +1,12 @@
+.list {
+  li {
+    padding: 1rem 2rem;
+    list-style-type: none;
+    border: 1px solid $mainOrange;
+    width: 300px;
+
+    @include atSmall {
+      width: 500px;
+    }
+  }
+}

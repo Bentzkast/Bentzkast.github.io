@@ -1,0 +1,16 @@
+.heading {
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: lighter;
+
+  strong {
+    font-weight: bold;
+  }
+
+  @include atLarge {
+    text-align: left;
+  }
+
+  &__subheading {
+  }
+}
