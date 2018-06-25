@@ -38,13 +38,19 @@
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#experience" id="experience-link">Experience</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#project" id="project-link">Project</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#skills" id="skills-link">Skills</a>
+            </li>
+            <li>
+              <a href="#education" id="education-link">Education</a>
+            </li>
+            <li>
+              <a href="#about" id="about-link">About</a>
             </li>
           </ul>
         </nav>
@@ -71,7 +77,7 @@
     </div>
   </div>
 
-  <div class="page-section" id="experience">
+  <div class="page-section" id="experience" data-matching-link="#experience-link">
     <div class="container">
       <h1 class="heading">Related
         <strong>Experience</strong>
@@ -103,7 +109,7 @@
 
   </div>
 
-  <div class="page-section">
+  <div class="page-section" id="project" data-matching-link="#project-link">
     <div class="container">
       <h1 class="heading">Personal &amp; University
         <strong>Project</strong>
@@ -140,15 +146,7 @@
 
   </div>
 
-  <div class="page-section page-section--blue" id="education">
-    <div class="container">
-      <h1 class="heading ">Education</h1>
-      <h3 class="reveal-on-scroll">B.S. Computer Engineering, California Polytechnic State University, 2018 ( Dean List )</h3>
-      <h3 class="reveal-on-scroll">A.S. Computer Engineering, Green River Community College, 2015 ( Graduated with Honors) </h3>
-    </div>
-
-  </div>
-  <div class="page-section page-section--blue" id="skills">
+  <div class="page-section page-section--blue" id="skills" data-matching-link="#skills-link">
     <div class="container">
       <h1 class="heading">Skills</h1>
       <ul class="list reveal-on-scroll">
@@ -159,13 +157,20 @@
         <li>Postman, Mocha</li>
         </u>
     </div>
-
   </div>
 
-  <div class="page-section page-section--green" id="about" style="min-height: 500px">
+  <div class="page-section page-section--blue" id="education" data-matching-link="#education-link" style="min-height: 500px">
+    <div class="container">
+      <h1 class="heading ">Education</h1>
+      <h3 class="reveal-on-scroll">B.S. Computer Engineering, California Polytechnic State University, 2018 ( Dean List )</h3>
+      <h3 class="reveal-on-scroll">A.S. Computer Engineering, Green River Community College, 2015 ( Graduated with Honors) </h3>
+    </div>
+  </div>
+
+  <div class="page-section page-section--green" id="about" style="min-height: 500px" data-matching-link="#about-link">
     <div class="container">
       <h1 class="heading">About</h1>
-      <h3>Email : jalfredopoly@gmail.com</h3>
+      <h3 class="heading--sub">Email : jalfredopoly@gmail.com</h3>
       <div class="paragraph reveal-on-scroll">
         <p>A resourceful, dependable, responsible, enthusiastic and active team player in a dynamic work environment. Solve
           and manage complex challenges to deliver high-quality results. High attention to detail and desire to learn. Love

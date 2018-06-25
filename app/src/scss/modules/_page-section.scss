@@ -1,9 +1,13 @@
 .page-section {
-  padding: 2.25rem 0 1.12 0;
+  padding: 2.25rem 0 1.12rem 0;
   background-color: $mainWhite;
 
   @include atSmall {
-    padding: 4.5rem 0 2.25 0;
+    padding: 4.5rem 0 2.25rem 0;
+  }
+
+  @include atMedium {
+    padding: 6.75rem 0 3.37rem 0;
   }
 
   &--blue {
