@@ -490,10 +490,13 @@ a {
 
 .heading {
   text-align: center;
-  font-size: 3.1rem;
+  font-size: 2.3rem;
   font-weight: lighter; }
   .heading strong {
     font-weight: bold; }
+  @media (min-width: 530px) {
+    .heading {
+      font-size: 3.1rem; } }
   @media (min-width: 1010px) {
     .heading {
       text-align: left; } }
@@ -679,3 +682,11 @@ a {
   @media (min-width: 530px) {
     .list li {
       width: 500px; } }
+
+.to-reveal {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 1.5s ease-out; }
+  .to-reveal--is-visible {
+    opacity: 1;
+    transform: scale(1); }
