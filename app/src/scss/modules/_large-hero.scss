@@ -8,7 +8,7 @@
   }
 
   &__text-content {
-    padding-top: 88px;
+    padding-top: 90px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -41,8 +41,11 @@
     margin: 0;
 
     @include atSmall {
-      color: $secondaryBlue;
       font-size: 2.9rem;
+    }
+
+    @include atMedium {
+      color: $secondaryBlue;
     }
   }
 
@@ -57,7 +60,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include atSmall {
+    @include atMedium {
       font-size: 1.875rem;
     }
   }

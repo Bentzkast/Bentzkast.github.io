@@ -2,7 +2,7 @@ const gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass'),
   imagemin = require('gulp-imagemin'),
-  uglify = require('gulp-uglify');
+  webpack = require('webpack');
 
 // compile sass
 gulp.task('sass', () => {
@@ -20,6 +20,14 @@ gulp.task('sass', () => {
   );
 });
 
+// compile js
+gulp.task('js', () => {
+  webpack(require('./webpack.config'), (err, stats) => {
+    if (err) console.log(err.toString());
+    console.log(stats.toString());
+  });
+});
+
 // watch and serve
 gulp.task('serve', ['sass'], () => {
   browserSync.init({
@@ -28,6 +36,7 @@ gulp.task('serve', ['sass'], () => {
 
   // check if there are any change, if so compile and refresh
   gulp.watch(['./app/src/scss/**/*.scss'], ['sass']);
+  gulp.watch(['./app/src/js/**/*.js'], ['js'], browserSync.reload);
   gulp.watch('./index.html').on('change', browserSync.reload);
 });
 

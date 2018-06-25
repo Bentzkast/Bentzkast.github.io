@@ -1,6 +1,14 @@
 .primary-nav {
+  padding-top: 10px;
+
+  @include atMedium {
+    padding-top: 0;
+  }
+
   &--pull-right {
-    float: right;
+    @include atMedium {
+      float: right;
+    }
   }
 
   ul {
@@ -11,8 +19,19 @@
 
   li {
     list-style: none;
-    float: left;
+    display: inline-block;
     padding-right: 20px;
+    @include atMedium {
+      float: left;
+      display: block;
+    }
+  }
+
+  li:last-child {
+    padding-right: 0;
+    @include atMedium {
+      padding-right: 20px;
+    }
   }
 
   a {
@@ -20,6 +39,14 @@
     font-weight: 300;
     text-decoration: none;
     display: block;
-    padding: 12px 0;
+    padding: 12px 12px;
+    font-size: 0.8rem;
+    background-color: rgba($mainBlue, 0.8);
+
+    @include atMedium {
+      font-size: 1rem;
+      padding: 12px 0;
+      background-color: transparent;
+    }
   }
 }

@@ -5,7 +5,7 @@
   padding-bottom: 2.5rem;
   box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 13px;
-  @include atSmall {
+  @include atMedium {
     padding-left: 280px;
   }
 
@@ -18,7 +18,7 @@
     left: 2%;
     border: 2px solid $mainGreen;
 
-    @include atSmall {
+    @include atMedium {
       top: 50%;
       transform: translateY(-50%);
       margin: 2px;
@@ -33,7 +33,7 @@
     margin-bottom: 0.8rem;
     text-align: center;
 
-    @include atSmall {
+    @include atMedium {
       margin-top: 1em;
       font-size: 1.875rem;
     }
@@ -51,7 +51,7 @@
     padding: 0 1.5rem;
     line-height: 1.3rem;
 
-    @include atSmall {
+    @include atMedium {
       padding: 0 4.5rem;
     }
   }
