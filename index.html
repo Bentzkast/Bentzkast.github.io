@@ -60,15 +60,15 @@
 
   <div class="large-hero">
     <picture>
-      <source srcset="app/dist/images/intro--large.jpeg 1920w" media="(min-width: 1280px)">
-      <source srcset="app/dist/images/intro--medium.jpeg 1280w" media="(min-width: 640px)">
-      <img srcset="app/dist/images/intro--small.jpeg 640w" alt="Mountains" class="large-hero__image">
+      <!-- <source srcset="app/dist/images/introlarge.jpeg 1920w" media="(min-width: 1280px)"> -->
+      <!-- <source srcset="app/dist/images/intromedium.jpeg 1280w" media="(min-width: 640px)"> -->
+      <img src="app/dist/images/KandW.png" alt="Knight and Wizard" class="large-hero__image">
     </picture>
     <div class="large-hero__text-content">
       <div class="container">
         <h1 class="large-hero__title">Hello</h1>
         <h2 class="large-hero__subtitle">Welcome</h2>
-        <p class="large-hero__description">My name is Joseph Alfredo and this is my web portfolio. </p>
+        <p class="large-hero__description"> My name is Joseph Alfredo and I'm 22 years old computer engineering graduate, specialize in game &amp; web development</p>
         <p class="large-hero__button">
           <a class="btn btn--orange btn--large" href="app/dist/docs/Resume-JosephAlfredo.pdf">My resume (pdf)</a>
         </p>
@@ -79,8 +79,8 @@
 
   <div class="page-section" id="experience" data-matching-link="#experience-link">
     <div class="container">
-      <h1 class="heading">Related
-        <strong>Experience</strong>
+      <h1 class="heading">Employment
+        <strong>History</strong>
       </h1>
       <div class="projects">
         <img class="projects__image" src="app/dist/images/BoxModel.png" alt="chat server">
@@ -94,7 +94,6 @@
           </p>
           <p>Designed UI to ensure maximum clarity and minimize user confusion by implementing animation for each step and drop-down
             interface UI with CSS and Javascript.
-
           </p>
           <p>Programmed the state management logic for the application with React framework which works seamlessly with Professor's
             custom-made histogram code.
@@ -104,6 +103,16 @@
           <a class="btn btn--centered" href="https://bentzkast.github.io/BoxModel/">Check it out here</a>
         </div>
 
+      </div>
+      <div class="projects">
+        <img class="projects__image" src="app/dist/images/GRCC.jpg" alt="chat server">
+        <h3 class="projects__title">Math tutor - Green River Community College</h3>
+        <h4 class="projects__subtitle">2013/09 to 2013/12</h4>
+        <div class="projects__desc">
+          <p>Helped diverse students in math assignment and understanding the basic concept of college-level math.
+          </p>
+          <p>Organized group study session and acquire additional necessary knowledge for further mastery of the subject.
+        </div>
       </div>
     </div>
 
@@ -116,16 +125,27 @@
       </h1>
       <div class="projects reveal-on-scroll">
         <img class="projects__image" src="app/dist/images/cookery.png" alt="chat server">
-        <h3 class="projects__title">Cookery - A recipe sharing website</h3>
+        <h3 class="projects__title"> Cookery - Angular with ASP.NET core web applicaiton</h3>
         <h4 class="projects__subtitle">2018/05 to Present</h4>
         <div class="projects__desc">
-          <p>Developed an authentication system by implementing a JSON web token for a session key.
+          <p>Utilized JSON web token as an authorization strategy for the application, with protected routes and data transfer
+            objects for validations
           </p>
-          <p>Implemented posting and sharing system with ajax which allow multiple users to like and comment on each other recipes,
-            post, and message.
+          <p>Served REST API with ASP.NET core with entity framework as an object-relational mapper, with a repository pattern
+            to ease database migrations. </p>
+          <p>Implemented Angular-6 as a client-side application which displays various data served from the API.</p>
+          <p>Designed display style for the recipes with bootstrap and custom stylesheet.
           </p>
-          <p>Used API with React-Redux in client side to serve form validation and authentication session.
-          </p>
+        </div>
+      </div>
+      <div class="projects reveal-on-scroll">
+        <img class="projects__image" src="app/dist/images/EconomySimulationUnity.png" alt="chat server">
+        <h3 class="projects__title"> Unity Economy Simulation Game - Senior Project </h3>
+        <h4 class="projects__subtitle">2018/01 to 2018/6</h4>
+        <div class="projects__desc">
+          <p>Modeled real-world international economic transaction of goods, supply, and demand.</p>
+          <p>Implemented the Dijkstra algorithm for calculating the optimum path for goods supply chain.</p>
+          <p>Utilized Unity engine API for games objects graphical rendering and C# for the game model of the economy simulation.</p>
         </div>
       </div>
       <div class="projects reveal-on-scroll">
@@ -133,6 +153,7 @@
         <h3 class="projects__title">React Chat Server - Full stack reddit like web application</h3>
         <h4 class="projects__subtitle">2018/01 to 2018/4</h4>
         <div class="projects__desc">
+          <p>Designed a full MERN stack web application with messaging, validation, and authorization </p>
           <p>Created fully RESTful API backend according to a specified specification, tested by implementing Postman tests
             to ensure reliability and expected behavior.
           </p>
@@ -151,7 +172,8 @@
       <h1 class="heading">Skills</h1>
       <ul class="list reveal-on-scroll">
         <li>Java, C#, C, Python</li>
-        <li>HTML, CSS, SASS, JavaScript, Jquery, NodeJS</li>
+        <li>HTML, CSS, SASS, JavaScript, NodeJS</li>
+        <li>Jquery, Angular, React, Unity </li>
         <li>SQL, MYSQL, PostgreSQL, MongoDB</li>
         <li>Git, Github, Gulp, Webpack</li>
         <li>Postman, Mocha</li>
@@ -164,6 +186,7 @@
       <h1 class="heading ">Education</h1>
       <h3 class="reveal-on-scroll">B.S. Computer Engineering, California Polytechnic State University, 2015 - 2018 ( Dean List )</h3>
       <h3 class="reveal-on-scroll">A.S. Computer Engineering, Green River Community College, 2013 2015 ( Graduated with Honors) </h3>
+      <h3 class="reveal-on-scroll">High School, St Ursula BSD, 2011 - 2013 (Physics Club) </h3>
     </div>
   </div>
 
@@ -172,10 +195,13 @@
       <h1 class="heading">About</h1>
       <h3 class="heading--sub">Email : jalfredopoly@gmail.com</h3>
       <div class="paragraph reveal-on-scroll">
-        <p>A resourceful, dependable, responsible, enthusiastic and active team player in a dynamic work environment. Solve
-          and manage complex challenges to deliver high-quality results. High attention to detail and desire to learn. Love
-          elegant interfaces and writing clean code. </p>
+        <p> My name is Joseph Alfredo and I'm 22 years old computer engineering graduate, specialize in game &amp; web development
+          Strife to deliver high quality and maintainable products, aimed to deliver the intended experience with crafted
+          products Originated from Indonesia, love playing and making games, enjoy the peacefulness of hiking and the social
+          aspect of cooking. Currently Looking for an opportunity as a software engineer</p>
+
       </div>
+      <div style="height: 200px;"></div>
     </div>
 
   </div>
