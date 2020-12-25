@@ -1,0 +1,23 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #24292e;
+    z-index: 1;
+    color: #aaaaaa;
+}
+
+#about {
+    margin-top: 180px;
+}
+
+#bottom-bar {
+    background-color: #24292e;
+    padding-left: 10%;
+    padding-right: 10%;
+    bottom: 0;
+    color: #aaaaaa;
+}
