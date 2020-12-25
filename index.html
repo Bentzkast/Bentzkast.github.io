@@ -6,236 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Joseph Alfredo</title>
-  <meta name="keywords" content="Joseph Alfredo portfolio">
-  <meta name="description" content="Joseph Alfredo portfolio">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./app/dist/styles/styles.css">
+  <meta name="keywords" content="Joseph Alfredo webpages">
+  <meta name="description" content="Joseph Alfredo webpages">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/personal.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="site-header__logo">
-        <div class="site-header__logo__graphic">Joseph Alfredo</div>
-      </div>
+  <div id="navbar">
+    <h1>Joseph Alfredo </h1>
+    <span id="footnote">&mdash; Software Engineer at Okta, Inc &mdash; Seattle, WA</span>
+    <br>
+    <a href="https://github.com/Bentzkast">Github</a>
+    <a href="https://www.linkedin.com/in/josephalfredo/">LinkedIn</a>
+  </div>
 
-      <div class="site-header__menu-icon">
-        <div class="site-header__menu-icon__middle"></div>
-      </div>
+  <div class="container" id="about">
+    <h3>About</h3>
+    <ul>
+      <li>Obtained experience developing complete applications in C/C++ and Javascript.</li>
+      <li>Graduated with BS in Computer Engineering.</li>
+      <li>Passion for writing documented, efficient, and simple code to solve problems in a timely manner.</li>
+      <li>Intrigued by software language & architecture.</li>
+      <li>Love back-end programming, fiction reading and writing, history, games, cycling, and movies. </li>
+      <li>Actively developing &mdash; Rust and JS &mdash; application for Work and personal project</li>
+    </ul>
+  </div>
 
-      <div class="site-header__menu-content">
-        <div class="site-header__btn-container">
-          <a href="https://github.com/Bentzkast" class="btn">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="site-header__btn-container">
-          <a href="https://www.linkedin.com/in/josephalfredo/" class="btn">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </div>
-        <nav class="primary-nav primary-nav--pull-right">
-          <ul>
-            <li>
-              <a href="#experience" id="experience-link">Experience</a>
-            </li>
-            <li>
-              <a href="#project" id="project-link">Project</a>
-            </li>
-            <li>
-              <a href="#skills" id="skills-link">Skills</a>
-            </li>
-            <li>
-              <a href="#education" id="education-link">Education</a>
-            </li>
-            <li>
-              <a href="#about" id="about-link">About</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <div class="container" id="experience">
+    <h3>Experience</h3>
+    <div>
+      <h5>Okta</h5>
+      <ul>
+        <li>Sofware Engineer &mdash; Full Time  &mdash; Feb 2020 - Present</li>
+        <li>Associate Sofware Engineer &mdash; Full Time  &mdash; Jul 2019 - Feb 2020</li>
+        <li>Software Engineering Intern &mdash; Full Time  &mdash; Mar 2019 - Jul 2019</li>
+      </ul>
     </div>
-  </header>
-
-  <div class="large-hero">
-    <picture>
-      <source srcset="app/dist/images/intro--large.jpeg 1920w" media="(min-width: 1280px)">
-      <source srcset="app/dist/images/intro--medium.jpeg 1280w" media="(min-width: 640px)">
-      <img srcset="app/dist/images/intro--small.jpeg 640w" alt="Knight and Wizard" class="large-hero__image">
-    </picture>
-    <div class="large-hero__text-content">
-      <div class="container">
-        <h1 class="large-hero__title">Hello</h1>
-        <h2 class="large-hero__subtitle">Welcome</h2>
-        <p class="large-hero__description"> My name is Joseph Alfredo, currently working at OKTA, Inc as an Associate software engineer. <br> I also doing game development as a side project.</p>
-        <p class="large-hero__button">
-          <a class="btn btn--orange btn--large" href="app/dist/docs/Resume-JosephAlfredo-2019.pdf">My resume (pdf)</a>
-        </p>
-      </div>
-
+    <div>
+      <h5>Azuqua</h5>
+      <ul>
+        <li>Sofware Developer Intern &mdash; Full Time  &mdash; Oct 2018 - Mar 2019</li>
+      </ul>
+    </div>
+    <div>
+      <h5>California Polytechnic State University</h5>
+      <ul>
+        <li>Undergraduate Research Assistant &mdash; Part Time  &mdash; Feb 2018 - Jun 2018</li>
+      </ul>
     </div>
   </div>
 
-  <div class="page-section" id="experience" data-matching-link="#experience-link">
-    <div class="container">
-      <h1 class="heading">Employment
-        <strong>History</strong>
-      </h1>
-      <div class="projects">
-        <img class="projects__image" src="app/dist/images/okta-logo.png" alt="Okta">
-        <h3 class="projects__title">Software engineer intern -> Associate software engineer <br> Okta, Inc</h3>
-        <h4 class="projects__subtitle">10/1/2018 to 03/15/2019</h4>
-        <div class="projects__desc">
-          <p>Develop 3 user provisioning Connectors with proper OAuth2 authentication and CRUD operations, Slack, Google Directory,
-          and Service Now.</p>
-          <p>Designed best patterns and documentation for Connector software development.</p>
-          <p>Improved performance both in speed and memory of connectors with streaming pagination and parallel processing patterns.</p>
-          <p>Enhanced Connector metadata compiler in Rust to ensure safe handling of edge cases.</p>
-        </div>
-      </div>
-
-      <div class="projects">
-        <img class="projects__image" src="app/dist/images/azuqua.jpg" alt="azuqua">
-        <h3 class="projects__title">Software engineering intern - Azuqua, Inc</h3>
-        <h4 class="projects__subtitle">10/1/2018 to 03/15/2019</h4>
-        <div class="projects__desc">
-          <p>Implemented javascript code to integrate with enterprise APIs, achieved secure authorization and increase in performance
-          on large data payload.</p>
-          <p>Worked with an in-house library to implement data manipulation and formatting for user experience.</p>
-        <p>Used unit test into the connector development pipeline to ensure resilient codebase.
-        </p>
-        </div>      
-      </div>
-
-      <div class="projects">
-        <img class="projects__image" src="app/dist/images/BoxModel.png" alt="chat server">
-        <h3 class="projects__title">Front End Developer - California Polytechic Undergraduate Research</h3>
-        <h4 class="projects__subtitle">2018/02 to 2018/06</h4>
-        <div class="projects__desc">
-          <p>Achieved dynamic visual presentation of a university level statistic concept by implementing a single page web
-            application with React and Bootstrap framework.
-          </p>
-          <p>Dynamic workflow with collaboration via GitHub and weekly meetings with Professor Dennis L. Sun.
-          </p>
-          <p>Designed UI to ensure maximum clarity and minimize user confusion by implementing animation for each step and drop-down
-            interface UI with CSS and Javascript.
-          </p>
-          <p>Programmed the state management logic for the application with React framework which works seamlessly with Professor's
-            custom-made histogram code.
-          </p>
-        </div>
-        <div class="projects__button">
-          <a class="btn btn--centered" href="https://bentzkast.github.io/BoxModel/">Check it out here</a>
-        </div>
-
-      </div>
-      <div class="projects">
-        <img class="projects__image" src="app/dist/images/GRCC.jpg" alt="chat server">
-        <h3 class="projects__title">Math tutor - Green River Community College</h3>
-        <h4 class="projects__subtitle">2013/09 to 2013/12</h4>
-        <div class="projects__desc">
-          <p>Helped diverse students in math assignment and understanding the basic concept of college-level math.
-          </p>
-          <p>Organized group study session and acquire additional necessary knowledge for further mastery of the subject.
-        </div>
-      </div>
+  <div class="container" id="education">
+    <h3>Education</h3>
+    <div>
+      <h5>California Polytechnic State University</h5>
+      <ul>
+        <li>
+          Bachelor of Science &mdash; Computer Engineering, 3.5 &mdash; 2015 - 2018
+          <p>Learned foundation on the principle of practical software writing and architecture design. A critical skill for team collaboration for medium-sized software projects. Understanding of computer low-level logic and optimization.</p>
+        </li>
+      </ul>
     </div>
-
-  </div>
-
-  <div class="page-section" id="project" data-matching-link="#project-link">
-    <div class="container">
-      <h1 class="heading">Personal &amp; University
-        <strong>Project</strong>
-      </h1>
-      <div class="projects reveal-on-scroll">
-        <img class="projects__image" src="app/dist/images/cookery.png" alt="chat server">
-        <h3 class="projects__title"> Cookery - Angular with ASP.NET core web app</h3>
-        <h4 class="projects__subtitle">2018/05 to Present</h4>
-        <div class="projects__desc">
-          <p>Utilized JSON web token as an authorization strategy for the application, with protected routes and data transfer
-            objects for validations
-          </p>
-          <p>Served REST API with ASP.NET core with entity framework as an object-relational mapper, with a repository pattern
-            to ease database migrations. </p>
-          <p>Implemented Angular-6 as a client-side application which displays various data served from the API.</p>
-          <p>Designed display style for the recipes with bootstrap and custom stylesheet.
-          </p>
-        </div>
-      </div>
-      <div class="projects reveal-on-scroll">
-        <img class="projects__image" src="app/dist/images/EconomySimulationUnity.png" alt="chat server">
-        <h3 class="projects__title"> Unity Economy Simulation Game - Senior Project </h3>
-        <h4 class="projects__subtitle">2018/01 to 2018/6</h4>
-        <div class="projects__desc">
-          <p>Modeled real-world international economic transaction of goods, supply, and demand.</p>
-          <p>Implemented the Dijkstra algorithm for calculating the optimum path for goods supply chain.</p>
-          <p>Utilized Unity engine API for games objects graphical rendering and C# for the game model of the economy simulation.</p>
-        </div>
-      </div>
-      <div class="projects reveal-on-scroll">
-        <img class="projects__image" src="app/dist/images/ChatServer.png" alt="chat server">
-        <h3 class="projects__title">React Chat Server - Full stack reddit like web application</h3>
-        <h4 class="projects__subtitle">2018/01 to 2018/4</h4>
-        <div class="projects__desc">
-          <p>Designed a full MERN stack web application with messaging, validation, and authorization </p>
-          <p>Created fully RESTful API backend according to a specified specification, tested by implementing Postman tests
-            to ensure reliability and expected behavior.
-          </p>
-          <p>Supports multiple levels of user privileges, admin, and user, with information stored in MySQL database, achieved
-            moderated public channel and private message between used.
-          </p>
-        </div>
-      </div>
+    <div>
+      <h5>Green River Community College</h5>
+      <ul>
+        <li>Bachelor of Science &mdash; Pre Computer Engineering, 3.78 &mdash; 2013 - 2015</li>
+        <p>Learned the fundamental foundation of Engineering and computer language</p>
+      </ul>
+    </div>
+    <div>
+      <h5>Saint Ursula BSD</h5>
+      <ul>
+        <li>High School &mdash; 2011 - 2013</li>
+        <p>Practiced Teamwork, Empathy, and Service</p>
+      </ul>
     </div>
   </div>
 
-  </div>
-
-  <div class="page-section page-section--blue" id="skills" data-matching-link="#skills-link">
-    <div class="container">
-      <h1 class="heading">Skills</h1>
-      <ul class="list reveal-on-scroll">
-        <li>Java, C#, C, Python</li>
-        <li>HTML, CSS, SASS, JavaScript, NodeJS</li>
-        <li>Jquery, Angular, React, Unity </li>
-        <li>SQL, MYSQL, PostgreSQL, MongoDB</li>
-        <li>Git, Github, Gulp, Webpack</li>
-        <li>Postman, Mocha</li>
-        </u>
+  <div class="container" id="education">
+    <h3>Volunteer </h3>
+    <div>
+      <h5>Math Tutor</h5>
+      <ul>
+        <li>Green River Community College &mdash; 2013</li>
+        <p>Helped fellow students improve their understanding, how to solve their math problem confidently</p>
+      </ul>
     </div>
   </div>
 
-  <div class="page-section page-section--blue" id="education" data-matching-link="#education-link" style="min-height: 500px">
-    <div class="container">
-      <h1 class="heading ">Education</h1>
-      <h3 class="reveal-on-scroll">B.S. Computer Engineering, California Polytechnic State University, 2015 - 2018 ( Dean List )</h3>
-      <h3 class="reveal-on-scroll">A.S. Computer Engineering, Green River Community College, 2013 2015 ( Graduated with Honors) </h3>
-      <h3 class="reveal-on-scroll">High School, St Ursula BSD, 2011 - 2013 (Physics Club) </h3>
-    </div>
-  </div>
-
-  <div class="page-section page-section--green" id="about" style="min-height: 500px" data-matching-link="#about-link">
-    <div class="container">
-      <h1 class="heading">About</h1>
-      <h3 class="heading--sub">Email : jalfredopoly@gmail.com</h3>
-      <div class="paragraph reveal-on-scroll">
-        <p> My name is Joseph Alfredo and I'm 24 years old computer engineering graduate, currently working as an associate software engineer at Okta, Inc.
-          I always striving to deliver a high quality product on a timely manner.</p>
-         <p>I come from Indonesia, love both playing and making games, I also enjoy cooking.</p> 
-      </div>
-      <div style="height: 200px;"></div>
-    </div>
-
-  </div>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Copyright &copy; 2018 Joseph Alfredo. </p>
-    </div>
+  <footer id="bottom-bar">
+    <p>Copyright &copy; 2018 Joseph Alfredo</p>
   </footer>
-  <script src="./app/dist/js/App.js"></script>
-</body>
 
+  <script src="./index.js"></script>
+</body>
 </html>
