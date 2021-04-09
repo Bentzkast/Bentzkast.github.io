@@ -1,3 +1,19 @@
+body{
+    background-color: #eeeeee;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1 > a{
+    color: #aaaaaa;
+}
+
+p{
+    margin-bottom: 0;
+}
+
 #navbar {
     position: fixed;
     top: 0;
@@ -10,8 +26,8 @@
     color: #aaaaaa;
 }
 
-#about {
-    margin-top: 180px;
+#padding-top {
+    height: 250px;
 }
 
 #bottom-bar {
